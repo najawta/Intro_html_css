@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #e5ecf1;
+            font-family: "Metal Mania", system-ui;
+        }
+        form{
+            width: 28%;
+            border: 1px solid #b9200f;
+            padding: 16px;
+            margin: auto;
+        }
+        label{
+            color: #11100f;
+        }
+        .fullwidth{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+        }
+        button{
+            width: 100%;
+            color: #188b27;
+            padding: 16px;
+            border-color: #030405;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Form inputs text, email, passsword, phone, date, radio button, checkbox, select -->
+
+    <form action="">
+        <label for="full_name">First and Last Name</label>
+        <input class="fullwidth" type="text" name="full_name" id="full_name" placeholder="Enter your full name" required>
+       
+        <br>
+       <label for="email">Email</label>
+        <input class="fullwidth" type="email" name="email" id="email" placeholder="Email" required>
+
+        <br>
+        <label for="">Password</label>
+        <input class="fullwidth" type="password" name="password" id="password" placeholder="*******" required>
+
+        <br>
+       <label for="dob">Date of Birth</label>
+        <input class="fullwidth" type="date" name="dob" id="dob" required min="1940-01-01" max="2008-01-01">
+
+        <br>
+        <label for="gender">Gender</label>
+
+        <br>
+        <input type="radio" name="gender" id="male" value="m">
+        <label for="male">Male</label>
+
+        <br>
+        <input type="radio" name="gender" id="female" value="f" checked>
+        <label for="female">Female</label> 
+        <br>
+        <hr>
+        <label for="Selecy your favourite sport">Sport</label>
+        <br>
+
+        
+        <input type="checkbox" name="Tennis" id="tennis" value="tennis"> 
+        <label for="tennis">Tennis</label>
+
+        <br>
+        <input type="checkbox" name="Tennis" id="tennis" value="tennis">
+        <label for="tennis">Tennis</label>
+
+        <br>
+        <input type="checkbox" name="Ball" id="ball" value="ball">
+        <label for="ball">Ball</label>
+
+        <br>
+        <input type="checkbox" name="Volleyball" id="volleyball" value="volleyball">
+        <label for="volleyball">Volleyball</label>
+        
+
+        <br>
+        <label for="county">county</label>
+        <select class="fullwidth" type="county" id="county" required>
+            <option value="county">Select county</option>
+            <option value="nairobi">Nairobi</option>
+            <option value="mombasa">mombasa</option>
+            <option value="nakuru">Nakuru</option>
+            <!-- slider -->
+        </select> 
+        <br>
+        <button>Submit</button>
+
+    </form>
+</body>
+</html>
