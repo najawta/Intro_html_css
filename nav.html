@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            font-family: "Quantico", sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            border: #000000;
+        }
+        .nav-items{
+            width: 80%;
+            /* background-color: #8a2be2; */
+            display: flex;
+            justify-content: space-between;
+            align-items: self-start;
+           
+        }
+        .nav-items ul{
+            display: flex;
+            list-style-type: none;
+        }
+        .nav-items li{
+            margin-right: 16px;
+            margin-left: 16px;
+
+        }
+        .nav-items a{
+            text-decoration: none;
+            color: #000000;
+            text-transform: uppercase;
+        }
+        .nav-items a:hover{
+            color: #dc143c;
+            text-decoration: underline;
+        }
+        .nav-items img{
+            width: 48px;
+            height: 48px;
+        }
+        /* git add . */
+        /* git commit -m"built the nav bar */
+        /* git push */
+    </style>
+</head>
+<body>
+    <!-- Semantic tags -->
+    <nav>
+        <div class="nav-items">
+            <img src="images/star.svg" alt="company logo">
+            <ul>
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+</body>
+</html>
